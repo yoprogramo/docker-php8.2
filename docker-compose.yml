@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  php:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: yoprogramo/php8.2:${VERSION}
+
+  php-xdebug:
+    build: 
+      context: .
+      dockerfile: Dockerfile-xdebug
+    image: yoprogramo/php8.2:${VERSION}-xdebug
+    
+
+  
