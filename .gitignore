@@ -1,0 +1,17 @@
+# Generic system files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.cache
+*.tmp
+
+# Backup files
+*.bak
+*.swp
+*.swo
+*.old
+
+# Ignore node_modules if using Node.js
+node_modules/
