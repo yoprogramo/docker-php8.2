@@ -9,7 +9,7 @@ RUN add-apt-repository ppa:ondrej/apache2
 RUN apt-get update
 RUN apt-get install -y --force-yes curl
 # Install PHP (latest) 
-RUN apt-get install -y --allow-unauthenticated php8.2 php8.2-mysql php8.2-cli php8.2-gd php8.2-curl php8.2-mbstring
+RUN apt-get install -y --allow-unauthenticated php8.2 php8.2-mysql php8.2-cli php8.2-gd php8.2-curl php8.2-mbstring php8.2-dom php8.2-imagick php8.2-zip php8.2-intl
 # Enable apache mods.
 RUN a2enmod php8.2
 RUN a2enmod rewrite
